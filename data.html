@@ -10,7 +10,7 @@
            <br />  
            <div class="container" style="width:600px;">  
                 <h3 align="">Load JSON Data using Ajax getJSON Method</h3><br />  
-                <button class="btn btn-info">Load Video List JSON Data</button>  
+               <!-- <button class="btn btn-info">Load Video List JSON Data</button>  -->
                 <table class="table table-bordered" style="display:none;">  
                      <tr>  
                           <th>Video Title</th>  
@@ -22,8 +22,8 @@
  </html>  
  <script>  
  $(document).ready(function(){  
-      $("button").click(function(){  
-           $("table").show();  
+     // $("button").click(function(){  
+      //     $("table").show();  
            $.getJSON("indonesia.json", function(data){  
                 $.each(data, function(key, value){  
                      $("table").append("<tr><td>"+value.video_title+"</td></tr>");  
